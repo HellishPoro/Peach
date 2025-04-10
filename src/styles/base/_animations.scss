@@ -1,0 +1,59 @@
+@keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes markerPulse {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  
+  .animate {
+    animation: slideIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+  
+  .city-switcher__marker {
+    animation: markerPulse 2s infinite;
+  }
+
+  .city-switcher__controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+    justify-content: center;
+  
+    .city-switcher__btn {
+      padding: 6px 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background-color: #f4f4f4;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+  
+      &.active {
+        background-color: #a30c33;
+        color: white;
+        font-weight: 600;
+      }
+  
+      &:hover {
+        background-color: #e6e6e6;
+      }
+    }
+  }
+  

@@ -1,0 +1,83 @@
+.business-directions {
+  width: 100%;
+  min-height: 936px;
+  padding: 80px 0;
+  background: #fff;
+
+  .container {
+    max-width: 1250px;
+    margin: 0 auto;
+    height: 100%;
+  }
+
+  .section-title {
+    font: 700 36px/1.2 'Proxima Nova Condensed';
+    text-align: center;
+    margin-bottom: 60px;
+    color: #2D2D2D;
+  }
+
+  .directions-grid {
+    display: flex;
+    gap: 30px;
+    height: calc(936px - 200px); 
+  }
+
+  .column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .direction-item {
+    position: relative;
+    overflow: hidden;
+    padding: 0; 
+    
+    h3 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 25px;
+      background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+      color: #fff;
+      font-size: 24px !important;
+      z-index: 2;
+    }
+  }
+  
+  .direction-image {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    
+    .direction-item:hover & {
+      transform: scale(1.05);
+    }
+  }
+  
+  .support-block {
+    h3 {
+      font-size: 28px !important;
+      text-align: center;
+    }
+    
+    .direction-image {
+      filter: grayscale(100%);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .direction-image {
+      height: 200px;
+    }
+    
+    .direction-item h3 {
+      font-size: 18px !important;
+      padding: 15px;
+    }
+  }
+}

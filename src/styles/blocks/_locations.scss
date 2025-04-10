@@ -1,0 +1,18 @@
+.locations {
+    padding: 5rem 0;
+    background: $color-light;
+  
+    .section-title {
+      color: $color-dark;
+      margin-bottom: $spacing-lg;
+      
+      &::after {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 3px;
+        background: $color-primary;
+        margin: $spacing-xs auto 0;
+      }
+    }
+  }

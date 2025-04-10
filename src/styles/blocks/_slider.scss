@@ -1,0 +1,46 @@
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 1110px;
+    margin: 60px auto;
+    overflow: hidden;
+  
+    .slider-track {
+      display: flex;
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    .slider-image {
+      min-width: 100%;
+      display: none;
+  
+      &.active {
+        display: block;
+      }
+    }
+  
+    .slider-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255, 255, 255, 0.8);
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      padding: 5px 10px;
+      border-radius: 50%;
+  
+      &.prev {
+        left: 10px;
+      }
+  
+      &.next {
+        right: 10px;
+      }
+  
+      &:hover {
+        background: rgba(200, 200, 200, 0.9);
+      }
+    }
+  }
+  

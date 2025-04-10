@@ -1,0 +1,29 @@
+$color-primary: #FF6B6B;
+$color-dark: #2D2D2D;
+$breakpoint-tablet: 768px;
+
+@import 'base/reset';
+@import 'base/animations';
+@import 'base/variables';
+
+@import 'blocks/header';
+@import 'blocks/directions';
+@import 'blocks/locations';
+@import 'blocks/top-nav';
+@import 'blocks/slider';
+@import 'blocks/mission';
+@import 'blocks/benefits';
+@import '../components/СitySwitcher/CitySwitcher.scss';
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
