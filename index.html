@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peach - Карьера</title>
+    
+    <link
+      href="https://fonts.cdnfonts.com/css/proxima-nova-condensed"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="./assets/index-ef9e3bfe.js"></script>
+    <link rel="stylesheet" href="./assets/index-b01c2a67.css">
+  </head>
+  <body>
+    <nav class="top-nav">
+      <div class="container">
+        <ul class="top-nav__list">
+          <li class="top-nav__item">
+            <a href="#" class="top-nav__link">Облачные решения</a>
+          </li>
+          <li class="top-nav__item">
+            <a href="#" class="top-nav__link">Кибербезопасность</a>
+          </li>
+          <li class="top-nav__item">
+            <a href="#" class="top-nav__link">Импортозамещение</a>
+          </li>
+          <li class="top-nav__item">
+            <a href="#" class="top-nav__link">Цифровая трансформация</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <img
+            src="data:image/png;base64,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"
+            alt="Peach Logo"
+            class="header__logo"
+          />
+          <p class="header__subtitle">
+            Ведущий поставщик IT-решений и сервисов.* Мы предлагаем комплексные
+            IT-решения, облака, программное и аппаратное обеспечение, решения
+            по цифровой трансформации и кибербезопасности, а также широкий
+            спектр IT-услуг.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Locations Section -->
+    <section class="locations">
+      <div class="container">
+        <h2 class="section-title">Наши офисы</h2>
+        <div class="city-switcher">
+          <div class="city-switcher__controls">
+            <button class="city-switcher__btn active" data-city="moscow">
+              Москва
+            </button>
+            <button class="city-switcher__btn" data-city="spb">
+              Санкт-Петербург
+            </button>
+            <button class="city-switcher__btn" data-city="perm">Пермь</button>
+            <button class="city-switcher__btn" data-city="vladivostok">
+              Владивосток
+            </button>
+            <button class="city-switcher__btn" data-city="khabarovsk">
+              Хабаровск
+            </button>
+            <button class="city-switcher__btn" data-city="irkutsk">
+              Иркутск
+            </button>
+            <button class="city-switcher__btn" data-city="krasnoyarsk">
+              Красноярск
+            </button>
+            <button class="city-switcher__btn" data-city="tomsk">Томск</button>
+            <button class="city-switcher__btn" data-city="novosibirsk">
+              Новосибирск
+            </button>
+            <button class="city-switcher__btn" data-city="omsk">Омск</button>
+            <button class="city-switcher__btn" data-city="tyumen">
+              Тюмень
+            </button>
+            <button class="city-switcher__btn" data-city="surgut">
+              Сургут
+            </button>
+            <button class="city-switcher__btn" data-city="chelyabinsk">
+              Челябинск
+            </button>
+            <button class="city-switcher__btn" data-city="ekaterinburg">
+              Екатеринбург
+            </button>
+            <button class="city-switcher__btn" data-city="izhevsk">
+              Ижевск
+            </button>
+            <button class="city-switcher__btn" data-city="ufa">Уфа</button>
+            <button class="city-switcher__btn" data-city="kazan">Казань</button>
+            <button class="city-switcher__btn" data-city="orenburg">
+              Оренбург
+            </button>
+            <button class="city-switcher__btn" data-city="samara">
+              Самара
+            </button>
+            <button class="city-switcher__btn" data-city="nizhny_novgorod">
+              Нижний Новгород
+            </button>
+            <button class="city-switcher__btn" data-city="krasnodar">
+              Краснодар
+            </button>
+            <button class="city-switcher__btn" data-city="volgograd">
+              Волгоград
+            </button>
+            <button class="city-switcher__btn" data-city="rostov">
+              Ростов-на-Дону
+            </button>
+            <button class="city-switcher__btn" data-city="belgorod">
+              Белгород
+            </button>
+            <button class="city-switcher__btn" data-city="voronezh">
+              Воронеж
+            </button>
+            <button class="city-switcher__btn" data-city="yaroslavl">
+              Ярославль
+            </button>
+          </div>
+
+          <div class="city-switcher__map-wrapper">
+            <img src="./map.png" alt="Карта" class="city-switcher__map" />
+            <div class="city-switcher__marker"></div>
+            <div class="city-switcher__title">Москва</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-mission" style="background-color: #a30c33">
+      <div class="container mission-container">
+        <div class="mission-content">
+          <h2 class="mission-title">Миссия Softline</h2>
+          <p class="mission-text">
+            Мы помогаем организациям трансформироваться, работать эффективно и
+            безопасно в условиях цифровой экономики.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="business-directions">
+      <div class="container">
+        <h2 class="section-title">Направления бизнеса</h2>
+
+        <div class="directions-grid">
+          <!-- Первая колонка -->
+          <div class="column">
+            <div class="direction-item">
+              <img
+                src="./assets/Решения Софтлайн-a4d6eafb.png"
+                alt="Решения Softline"
+                class="direction-image"
+              />
+            </div>
+
+            <div class="direction-item">
+              <img
+                src="./assets/Кибербезопасность-d49ea60e.png"
+                alt="Кибербезопасность"
+                class="direction-image"
+              />
+            </div>
+
+            <div class="direction-item">
+              <img
+                src="./assets/Облачные решения-98ac0657.png"
+                alt="Облачные решения"
+                class="direction-image"
+              />
+            </div>
+          </div>
+
+          <!-- Вторая колонка -->
+          <div class="column">
+            <div class="direction-item">
+              <img
+                src="./assets/Импортозамещение-c424127a.png"
+                alt="Импортозамещение"
+                class="direction-image"
+              />
+            </div>
+
+            <div class="direction-item">
+              <img
+                src="./assets/Цифровая трансформация-8b9d5769.png"
+                alt="Цифровая трансформация"
+                class="direction-image"
+              />
+            </div>
+
+            <div class="direction-item support-block">
+              <img
+                src="./assets/Тех поддержка-40d89b8d.png"
+                alt="Техническая поддержка"
+                class="direction-image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="benefits">
+        <div class="container">
+          <h2 class="benefits__title">Компенсационный пакет</h2>
+          <div class="benefits__items">
+            <div class="benefit">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="#B01736">
+                <path
+                  d="M12 2L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-3zm3 8h-2v2h2v2h-2v2h-2v-2H9v-2h2v-2H9V8h2V6h2v2h2v2z"
+                />
+              </svg>
+              <p>ДМС</p>
+            </div>
+
+            <div class="benefit">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="#B01736">
+                <path
+                  d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V9h14v10zM5 7V5h14v2H5zm3 6h8v2H8z"
+                />
+              </svg>
+              <p>Выходной <br />в день рождения</p>
+            </div>
+
+            <div class="benefit">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="#B01736">
+                <path
+                  d="M17 1H7c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2zm0 18H7V5h10v14z"
+                />
+                <path
+                  d="M12 18.5c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5z"
+                />
+              </svg>
+              <p>Корпоративная <br />мобильная связь</p>
+            </div>
+
+            <div class="benefit">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="#B01736">
+                <path
+                  d="M20 8h-3V6c0-1.1-.9-2-2-2H9c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v10h20V10c0-1.1-.9-2-2-2zM9 6h6v2H9V6zm11 12H4v-3h16v3zm0-5H4v-3h3v1h2v-1h6v1h2v-1h3v3z"
+                />
+              </svg>
+              <p>Корпоративные <br />скидки на спорт</p>
+            </div>
+
+            <div class="benefit">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="#B01736">
+                <path
+                  d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h18v14zM8 12h2v2H8zm-4 0h2v2H4zm8 0h2v2h-2zm4 0h2v2h-2z"
+                />
+              </svg>
+              <p>LTI</p>
+            </div>
+          </div>
+
+          <div class="benefits__divider"></div>
+
+          <div class="motivation">
+            <h3>Программа дополнительной мотивации</h3>
+            <p class="highlight">доплата 12% от суммы</p>
+
+            <div class="benefits__items">
+              <div class="benefit">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="#B01736">
+                  <path
+                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM8 8h8v2H8zm0 3h8v2H8z"
+                  />
+                </svg>
+                <p>Оргтехники</p>
+              </div>
+
+              <div class="benefit">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="#B01736">
+                  <path
+                    d="M12 2L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-3zm3 8h-2v2h2v2h-2v2h-2v-2H9v-2h2v-2H9V8h2V6h2v2h2v2z"
+                  />
+                </svg>
+                <p>ДМС</p>
+              </div>
+
+              <div class="benefit">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="#B01736">
+                  <path
+                    d="M12 2L2 12h3v8h14v-8h3L12 2zm0 4.5l5.5 5.5H14v5h-4v-5H6.5L12 6.5z"
+                  />
+                </svg>
+                <p>Ипотеки</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="slider">
+        <div class="slider-track">
+          <img
+            src="./assets/Слайд2-bfb0e043.png"
+            class="slider-image active"
+            alt="Image 1"
+          />
+          <img
+            src="./assets/Слайд1-735e7a00.png"
+            class="slider-image"
+            alt="Image 2"
+          />
+          <img
+            src="./assets/Слайд2-bfb0e043.png"
+            class="slider-image"
+            alt="Image 3"
+          />
+          <img
+            src="./assets/Слайд1-735e7a00.png"
+            class="slider-image"
+            alt="Image 4"
+          />
+          <img
+            src="./assets/Слайд2-bfb0e043.png"
+            class="slider-image"
+            alt="Image 5"
+          />
+        </div>
+
+        <button class="slider-btn prev">&lt;</button>
+        <button class="slider-btn next">&gt;</button>
+      </div>
+    </section>
+
+    
+  </body>
+</html>
