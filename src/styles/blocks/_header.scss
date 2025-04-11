@@ -1,5 +1,7 @@
+@use '../base/_variables.scss' as v;
+
 .header {
-    background: linear-gradient(45deg, $color-primary, $color-secondary);
+    background: linear-gradient(45deg, v.$color-primary, v.$color-secondary);
     color: $color-light;
     padding: 4rem 0;
     text-align: center;
@@ -16,7 +18,7 @@
   
     &__title {
       font-size: 2.5rem;
-      margin-bottom: $spacing-sm;
+      margin-bottom: v.$spacing-sm;
       text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
   
@@ -27,7 +29,7 @@
       margin: 0 auto;
     }
   
-    @media (max-width: $breakpoint-tablet) {
+    @media (max-width: v.$breakpoint-tablet) {
       padding: 3rem 0;
       
       &__title {

@@ -1,18 +1,20 @@
+@use '../base/_variables.scss' as v;
+
 .locations {
     padding: 5rem 0;
-    background: $color-light;
+    background: v.$color-light;
   
     .section-title {
-      color: $color-dark;
-      margin-bottom: $spacing-lg;
+      color: v.$color-dark;
+      margin-bottom: v.$spacing-lg;
       
       &::after {
         content: '';
         display: block;
         width: 50px;
         height: 3px;
-        background: $color-primary;
-        margin: $spacing-xs auto 0;
+        background: v.$color-primary;
+        margin: v.$spacing-xs auto 0;
       }
     }
   }

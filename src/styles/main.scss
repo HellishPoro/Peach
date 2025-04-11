@@ -2,17 +2,17 @@ $color-primary: #FF6B6B;
 $color-dark: #2D2D2D;
 $breakpoint-tablet: 768px;
 
-@import 'base/reset';
-@import 'base/animations';
-@import 'base/variables';
+@import 'base/_reset.scss';
+@import 'base/_animations.scss';
+@import 'base/_variables.scss';
 
-@import 'blocks/header';
-@import 'blocks/directions';
-@import 'blocks/locations';
-@import 'blocks/top-nav';
-@import 'blocks/slider';
-@import 'blocks/mission';
-@import 'blocks/benefits';
+@import 'blocks/_header.scss';
+@import 'blocks/_directions.scss';
+@import 'blocks/_locations.scss';
+@import 'blocks/_top-nav.scss';
+@import 'blocks/_slider.scss';
+@import 'blocks/_mission.scss';
+@import 'blocks/_benefits.scss';
 @import '../components/СitySwitcher/CitySwitcher.scss';
 
 
