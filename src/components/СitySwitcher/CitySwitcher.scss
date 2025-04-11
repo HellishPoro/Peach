@@ -20,7 +20,7 @@
       transition: all 0.3s ease;
   
       &.active {
-        background: $color-primary;
+        background: v.$color-primary;
         color: white;
         box-shadow: 0 4px 6px rgba(255, 107, 107, 0.2);
       }
@@ -61,7 +61,7 @@
       border-radius: 8px;
     }
   
-    @media (max-width: $breakpoint-tablet) {
+    @media (max-width: v.$breakpoint-tablet) {
       &__map-wrapper {
         height: 300px;
       }

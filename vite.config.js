@@ -5,11 +5,12 @@ export default defineConfig({
   build: {
     outDir: "dist",
     assetsDir: "assets",
+    emptyOutDir: true,
   },
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@import "./src/styles/base/variables";`,
+        additionalData: `@use "./src/styles/base/variables" as *;`,
       },
     },
   },
